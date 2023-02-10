@@ -40,7 +40,7 @@ function createConfig(format,output) {
     output.sourceMap = true;
 
     return {
-        input: resolve('src/index.js'),
+        input: resolve('src/index.html.js'),
         output,
         plugins: [
             uglify(),
