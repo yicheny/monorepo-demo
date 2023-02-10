@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-demo",
+  "version": "0.0.1",
+  "description": "a monorepo project demo",
+  "main": "index.js",
+  "type": "module",
+  "author": "ylf",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build:shared": "node build",
+    "build:dev": "node dev"
+  },
+  "devDependencies": {
+    "execa": "^6.1.0",
+    "minimist": "^1.2.7"
+  }
+}
