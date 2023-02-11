@@ -1,7 +1,7 @@
 import init from './init.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./App.jsx";
+import App from "./App";
 import {test} from '@shared/utils';
 import {print} from '@shared/base'
 

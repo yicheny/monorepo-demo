@@ -18,7 +18,6 @@ export default {
     },
     plugins: [
         resolve(),//默认不能获取node_modules内的文件
-        commonjs(),//es6模块语法转换
         postcss({
             extract: true,
             minimize: false,
@@ -27,14 +26,16 @@ export default {
         }),
         alias({
             entries: [
-                {find: "@shared", replacement: "../../shared"}
+                {find: "@shared", replacement: "../../shared"},
+                {find: "@yc-ui", replacement: "../../yc-ui"},
             ]
         }),
         babel({
             exclude: "node_modules/**",
             // extensions:['.js', '.jsx'],
-            babelHelpers: "bundled"
+            // babelHelpers: "bundled"
         }),
+        commonjs(),//es6模块语法转换
         // typescript({
         //     exclude: "node_modules/**",
         //     typescript: require("typescript")
