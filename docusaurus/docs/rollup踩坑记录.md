@@ -1,5 +1,7 @@
 # `[!] (plugin commonjs) SyntaxError: Unexpected token (13:11) in G:\demos\monorepo-demo\packages\demo\src\App.js`
-参见资料：[stackOverflow Rollup + React not compiling JSX](https://stackoverflow.com/questions/52884278/rollup-react-not-compiling-jsx)
+参见资料：
+- [stackOverflow Rollup + React not compiling JSX](https://stackoverflow.com/questions/52884278/rollup-react-not-compiling-jsx)
+- [连rollup都不会，还写什么插件库！](https://juejin.cn/post/6879590746572357646#heading-13)
 
 注意报错，可以看到是`@rollup/plugin-commonjs`抛出的报错，它不能解析`jsx`语法。
 

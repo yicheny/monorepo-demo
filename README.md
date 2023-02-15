@@ -7,6 +7,9 @@ monorepo-demo
 ## `demo`
 - [x] 支持`.js`书写`jsx`语法
 - `@shared`
+  - [x] 通过别名引入
   - [x] 支持公共方法模块`utils`
+  - [x] 支持公共组件模块`components`
+- [ ] `@yc-ui`
+  - [ ] 别名引入
   - [ ] 支持公共组件模块`components`
-- [ ] 在`demo`中通过别名引入`@yc-ui`

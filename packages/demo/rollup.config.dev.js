@@ -26,7 +26,7 @@ export default {
         }),
         alias({
             entries: [
-                {find: "@shared", replacement: "../../shared"},
+                {find: "@shared", replacement: "../../shared/dist"},
                 {find: "@yc-ui", replacement: "../../yc-ui"},
             ]
         }),

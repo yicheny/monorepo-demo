@@ -59,6 +59,52 @@ importers:
   packages/reactivity:
     specifiers: {}
 
+  packages/shared:
+    specifiers:
+      '@babel/core': ^7.12.3
+      '@babel/plugin-proposal-class-properties': ^7.12.1
+      '@babel/preset-env': ^7.12.1
+      '@babel/preset-react': ^7.12.5
+      '@rollup/plugin-alias': ^4.0.3
+      '@rollup/plugin-babel': ^6.0.3
+      '@rollup/plugin-commonjs': ^19.0.2
+      '@rollup/plugin-node-resolve': ^13.0.4
+      postcss: ^8.3.6
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      react-router-dom: ^5.3.0
+      rollup: ^2.33.3
+      rollup-plugin-dev: ^1.1.3
+      rollup-plugin-livereload: ^2.0.5
+      rollup-plugin-postcss: ^4.0.0
+      rollup-plugin-sourcemaps: ^0.6.3
+      rollup-plugin-typescript: ^1.0.1
+      rollup-plugin-uglify: ^6.0.4
+      sass: ^1.37.0
+      typescript: ^4.5.2
+    dependencies:
+      '@babel/core': 7.20.12
+      '@babel/plugin-proposal-class-properties': 7.18.6_@babel+core@7.20.12
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.12
+      '@babel/preset-react': 7.18.6_@babel+core@7.20.12
+      '@rollup/plugin-alias': 4.0.3_rollup@2.79.1
+      '@rollup/plugin-babel': 6.0.3_d8e457a9eec5694be0a6185ede2794cb
+      '@rollup/plugin-commonjs': 19.0.2_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      postcss: 8.4.21
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-router-dom: 5.3.4_react@17.0.2
+      rollup: 2.79.1
+      rollup-plugin-dev: 1.1.3
+      rollup-plugin-livereload: 2.0.5
+      rollup-plugin-postcss: 4.0.2_postcss@8.4.21
+      rollup-plugin-sourcemaps: 0.6.3_rollup@2.79.1
+      rollup-plugin-typescript: 1.0.1_typescript@4.9.5
+      rollup-plugin-uglify: 6.0.4_rollup@2.79.1
+      sass: 1.58.0
+      typescript: 4.9.5
+
   packages/yc-ui:
     specifiers:
       '@babel/core': ^7.12.3
