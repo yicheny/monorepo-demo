@@ -12,7 +12,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "start demo": "cd ./packages/demo && npm run start",
-    "start shared": "cd ./packages/shared && npm run start"
+    "start shared": "cd ./packages/shared && npm run start",
+    "build shared": "cd ./packages/shared && npm run build",
+    "publish:patch release-demo": "cd ./packages/release-demo && npm run publish:patch"
   },
   "devDependencies": {
     "execa": "^6.1.0",

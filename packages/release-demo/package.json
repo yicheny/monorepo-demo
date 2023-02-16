@@ -1,0 +1,15 @@
+{
+  "name": "release-demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "npm publish --registry=http://nexus.croot.com:8081/repository/npm-hosted/ --location=global",
+    "publish:patch": "npm version patch && npm run upload",
+    "publish:minor": "npm version minor && npm run upload",
+    "publish:major": "npm version major && npm run upload"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

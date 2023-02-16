@@ -18,7 +18,7 @@ function createConfigList(){
     return MODULE_NAMES.map(createConfig)
 }
 
-function createConfig(fileName,i){
+function createConfig(fileName){
     return {
         input: `src/${fileName}/index.js`,
         output: {
