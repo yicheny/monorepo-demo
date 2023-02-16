@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import {execa} from 'execa';
 
 console.log('build start!')
 await runParallel(getTargets(), build)

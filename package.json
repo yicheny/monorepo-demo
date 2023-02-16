@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "build:shared": "node build",
-    "build:dev": "node dev"
+    "start demo": "cd ./packages/demo && npm run start",
+    "start shared": "cd ./packages/shared && npm run start"
   },
   "devDependencies": {
     "execa": "^6.1.0",
