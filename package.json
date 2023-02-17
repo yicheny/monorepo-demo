@@ -14,6 +14,7 @@
     "start demo": "cd ./packages/demo && npm run start",
     "start shared": "cd ./packages/shared && npm run start",
     "build shared": "cd ./packages/shared && npm run build",
+    "publish release-demo": "cd ./packages/release-demo && npm run upload",
     "publish:patch release-demo": "cd ./packages/release-demo && npm run publish:patch"
   },
   "devDependencies": {
