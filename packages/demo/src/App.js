@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import './App.scss'
 import {ErrorBoundary} from "./ErrorBoundary";
 import Home from "./views/home";
+import ButtonView from "./views/button";
 
 const VIEW_CONFIG = [
     {text: "home", to: "/home"},
@@ -12,6 +13,7 @@ const VIEW_CONFIG = [
 export default function App() {
     return <ErrorBoundary>
         <Home/>
+        <ButtonView/>
         {/*<Menu config={VIEW_CONFIG}/>*/}
     </ErrorBoundary>
 

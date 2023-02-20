@@ -4,9 +4,10 @@ import ReactDOM from 'react-dom';
 import App from "./App";
 import {test} from '@shared/utils';
 import {print} from '@shared/base';
-import {Test} from '@shared/components';
+// import {Test} from '@shared/components';
+// import {Test} from '@yc-ui'
 
 print.setState(false);
 print.log("测试共享模块方法:test", test(1,2));
 
-ReactDOM.render(React.createElement(Test),document.querySelector('#root'));
+ReactDOM.render(React.createElement(App),document.querySelector('#root'));

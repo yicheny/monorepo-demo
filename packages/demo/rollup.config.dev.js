@@ -7,6 +7,8 @@ import postcss from 'rollup-plugin-postcss';
 import sourceMaps from "rollup-plugin-sourcemaps";
 // import typescript from "rollup-plugin-typescript";
 import alias from '@rollup/plugin-alias';
+import path from 'path'
+
 
 export default {
     input: 'src/index.js',
@@ -26,8 +28,8 @@ export default {
         }),
         alias({
             entries: [
-                {find: "@shared", replacement: "../../shared/dist"},
-                {find: "@yc-ui", replacement: "../../yc-ui"},
+                {find: "@shared", replacement: getRootPath('../shared/dist')},
+                {find: "@yc-ui", replacement:  getRootPath('../yc-ui/dist')},
             ]
         }),
         babel({
@@ -49,4 +51,9 @@ export default {
         })
     ],
     external: [],
+}
+
+function getRootPath(projectPath){
+    const projectRootDir = path.resolve(__dirname)
+    return path.resolve(projectRootDir, projectPath)
 }

@@ -1,5 +1,5 @@
 import React from 'react';
 
 export function Test(){
-    return <div>test</div>
+    return <div>yc-ui Test!</div>
 }
