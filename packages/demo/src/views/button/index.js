@@ -1,9 +1,9 @@
 import React from 'react';
-import {Test} from '@yc-ui'
+import {Button} from '@yc-ui'
 
 export default function ButtonView() {
     return <div>
-        <Test/>
+        <Button>默认按钮</Button>
     </div>
 
 }

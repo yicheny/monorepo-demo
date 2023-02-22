@@ -19,8 +19,6 @@ monorepo-demo
   - [x] 通过别名引入
   - [x] 支持公共方法模块`utils`
   - [x] 支持公共组件模块`components`
-- [ ] `@yc-ui`
-  - [ ] 别名引入
-  - [ ] 支持公共组件模块`components`
+  - [x] 支持`hooks`写法
 
 ## `yc-ui`

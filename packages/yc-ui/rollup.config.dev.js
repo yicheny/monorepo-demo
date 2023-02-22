@@ -32,6 +32,8 @@ function createConfig(){
                 contentBase: ''
             })
         ],
-        external: [],
+        external: [
+            'react',
+        ],
     }
 }

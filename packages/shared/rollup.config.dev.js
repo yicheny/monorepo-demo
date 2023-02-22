@@ -49,6 +49,8 @@ function createConfig(fileName){
                 contentBase: ''
             })
         ],
-        external: [],
+        external: [
+            'react'
+        ],
     }
 }
