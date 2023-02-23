@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link,useHistory } from "react-router-dom";
+import { Link,useHistory,useLocation } from "react-router-dom";
 import './Menu.scss';
+
+const INDENT = 32;
 
 export default function Menu({config}){
     return <div className='menu'>
@@ -12,7 +14,7 @@ export default function Menu({config}){
     </div>
 }
 
-function MenuItem({data,style}){
+function MenuItem({data, style}){
     const pathname = usePathname();
 
     return <div className={`item ${pathname===data.to ? 'active' : ''}`} style={style}>
@@ -20,7 +22,6 @@ function MenuItem({data,style}){
     </div>
 }
 
-const INDENT = 32;
 function SubMenu({data,level}){
     return <div className="submenu">
         <div className='submenu-title item'>{data.text}</div>
@@ -36,7 +37,8 @@ function SubMenu({data,level}){
 
 function usePathname(){
     const history = useHistory();
-    const [pathname,setPathname] = useState(history.location.pathname);
+    const location = useLocation();
+    const [pathname,setPathname] = useState(location.pathname);
 
     useEffect(()=>{
         return history.listen(location => {

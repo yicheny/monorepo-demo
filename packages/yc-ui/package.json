@@ -36,5 +36,8 @@
     "sass": "^1.37.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "clsx": "^1.2.1"
+  }
 }

@@ -20,5 +20,3 @@ monorepo-demo
   - [x] 支持公共方法模块`utils`
   - [x] 支持公共组件模块`components`
   - [x] 支持`hooks`写法
-
-## `yc-ui`

@@ -120,6 +120,7 @@ importers:
       '@types/hoist-non-react-statics': ^3.3.1
       '@types/react': ^17.0.35
       '@types/react-dom': ^17.0.11
+      clsx: ^1.2.1
       react: ^17.0.2
       react-dom: ^17.0.2
       react-jss: ^10.10.0
@@ -132,6 +133,8 @@ importers:
       rollup-plugin-typescript: ^1.0.1
       rollup-plugin-uglify: ^6.0.4
       sass: ^1.37.0
+    dependencies:
+      clsx: 1.2.1
     devDependencies:
       '@babel/core': 7.20.12
       '@babel/plugin-proposal-class-properties': 7.18.6_@babel+core@7.20.12
@@ -1615,6 +1618,11 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /co/4.6.0:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
