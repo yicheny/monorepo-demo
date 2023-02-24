@@ -121,6 +121,7 @@ importers:
       '@types/react': ^17.0.35
       '@types/react-dom': ^17.0.11
       clsx: ^1.2.1
+      lodash: ^4.17.21
       react: ^17.0.2
       react-dom: ^17.0.2
       react-jss: ^10.10.0
@@ -146,6 +147,7 @@ importers:
       '@types/hoist-non-react-statics': 3.3.1
       '@types/react': 17.0.53
       '@types/react-dom': 17.0.18
+      lodash: 4.17.21
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-jss: 10.10.0_react@17.0.2
@@ -2537,6 +2539,10 @@ packages:
 
   /lodash.uniq/4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: true
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}

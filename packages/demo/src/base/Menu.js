@@ -4,7 +4,7 @@ import './Menu.scss';
 
 const INDENT = 32;
 
-export default function Menu({config}){
+export function Menu({config}){
     return <div className='menu'>
         {
             config.map((x,i)=>{

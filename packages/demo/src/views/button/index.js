@@ -1,10 +1,12 @@
 import React from 'react';
-import {Button} from '@yc-ui'
+import {Button,Space} from '@yc-ui'
 
 export default function ButtonView() {
     return <div>
-        <Button>默认按钮</Button>
-        <Button type={'primary'}>主要按钮</Button>
+        <Space>
+            <Button>默认按钮</Button>
+            <Button type={'primary'}>主要按钮</Button>
+        </Space>
     </div>
 
 }

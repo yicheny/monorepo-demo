@@ -1,14 +1,16 @@
 import React from 'react';
-import {HashRouter as Router, Route, Switch} from "react-router-dom";
-import Menu from "./Menu";
+import {HashRouter as Router} from "react-router-dom";
 import './App.scss'
 import {ErrorBoundary} from "./ErrorBoundary";
 import Home from "./views/home";
 import ButtonView from "./views/button";
+import {Menu,RenderRoute} from "./base";
+import SpaceView from "./views/space";
 
 const VIEW_CONFIG = [
     {text: "home", to: "/home", element: <Home/>},
-    {text: "buttonView", to: "/view-button", element: <ButtonView/>},
+    {text: "buttonView", to: "/button", element: <ButtonView/>},
+    {text: "spaceView", to: "/space", element: <SpaceView/>},
 ]
 
 export default function App() {
@@ -24,13 +26,4 @@ export default function App() {
     </ErrorBoundary>
 }
 
-function RenderRoute({config}){
-    return <Switch>
-        {
-            config.map(c => {
-                return <Route key={c.to} path={c.to} children={c.element}/>
-            })
-        }
-    </Switch>
-}
 

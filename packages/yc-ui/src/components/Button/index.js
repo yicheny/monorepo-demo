@@ -4,6 +4,7 @@ import {createUseStyles} from 'react-jss'
 
 const useStyles = createUseStyles({
     button: {
+        boxSizing:"border-box",
         fontSize: 14,
         height: 36,
         padding: '7px 15px',
@@ -24,11 +25,11 @@ const useStyles = createUseStyles({
         backgroundColor: '#fff',
         borderColor: '#d9d9d9',
         boxShadow: '0 2px 0 rgb(0 0 0 / 2%)',
-        '&:hover':{
+        '&:hover': {
             color: '#4096ff',
             borderColor: '#4096ff',
         },
-        '&:active':{
+        '&:active': {
             color: '#0958d9',
             borderColor: '#0958d9',
         }
@@ -53,7 +54,10 @@ const TYPE = Object.freeze({
 
 export function Button({children, type = TYPE.default}) {
     const classes = useStyles()
-    return <span className={clsx(classes.button, {[classes.primary]: type === TYPE.primary, [classes.default]:type===TYPE.default})}>
+    return <div className={clsx(classes.button, {
+        [classes.default]: type === TYPE.default,
+        [classes.primary]: type === TYPE.primary,
+    })}>
              {children}
-         </span>
+         </div>
 }
