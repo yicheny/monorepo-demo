@@ -8,3 +8,6 @@
   - [x] 默认按钮
   - [x] 主要按钮
 - `Space`
+  - `size` 支持 `small`、`middle`、`large`
+  - `direaction` 支持 `horizontal`、`vertical`
+- `RadioGroup`

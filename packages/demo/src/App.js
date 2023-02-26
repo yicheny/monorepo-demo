@@ -6,11 +6,13 @@ import Home from "./views/home";
 import ButtonView from "./views/button";
 import {Menu,RenderRoute} from "./base";
 import SpaceView from "./views/space";
+import RadioView from "./views/radio";
 
 const VIEW_CONFIG = [
     {text: "home", to: "/home", element: <Home/>},
     {text: "buttonView", to: "/button", element: <ButtonView/>},
     {text: "spaceView", to: "/space", element: <SpaceView/>},
+    {text: "radio", to: "/radio", element: <RadioView/>},
 ]
 
 export default function App() {

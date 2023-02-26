@@ -8,9 +8,9 @@ const options = [
     {text:"D",value:4},
 ]
 
-export default function ButtonView() {
+export default function RadioView() {
     return <div>
-        <RadioGroup options={options}/>
+        <RadioGroup options={options} onChange={console.log} defaultValue={1}/>
     </div>
 
 }
